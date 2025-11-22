@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrajBhoomi Tours & Travels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Premium tours & travel services - BrajBhoomi Modern" />
+  <style>
+    /* small custom styles for gold accent and glass effect */
+    :root {
+      --gold: #d4af37;
+      --bg: #0b0b0b
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(6px)
+    }
+  </style>
+</head>
+
+<body class="bg-[#080808] text-gray-100 leading-relaxed">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl  ">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div
+          class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-600 to-yellow-400 flex items-center justify-center shadow-lg">
+          <img class="font-bold text-black text-lg rounded-full" src="assets/images/temple_icon.jpg" alt="">
+        </div>
+        <div>
+          <h1 class="font-semibold text-lg ">BrajBhoomi</h1>
+          <p class="text-xs text-gray-400 -mt-1">Tours &amp; Travels</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#packages" class="hover:text-yellow-400">Packages</a>
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="about.html" class="hover:text-yellow-400">About</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="contact.html"
+          class="hidden md:inline-block px-4 py-2 rounded-full border border-red-500 bg-red-500 text-white-800 text-sm glass transition-all duration-200 hover:scale-110">Enquire
+          Now</a>
+        <button id="mobile-toggle" class="md:hidden p-2 rounded bg-white/5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black/80 glass">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#packages" class="py-2">Packages</a>
+        <a href="#services" class="py-2">Services</a>
+        <a href="about.html" class="py-2">About</a>
+        <a href="contact.html" class="py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight" style="color:var(--gold)">Discover Divine Braj —
+          Travel in Luxury</h2>
+        <p class="mt-6 text-gray-300 max-w-xl">Expertly crafted pilgrim and cultural tours across Mathura, Vrindavan,
+          Agra and nearby heritage sites. Private cars, local guides, and bespoke packages for families and groups.</p>
+
+        <div class="mt-8 flex gap-3">
+          <a href="#packages"
+            class="px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 text-black font-semibold shadow transition-all duration-200 hover:scale-110">View
+            Packages</a>
+          <a href="contact.html"
+            class="px-6 py-3 rounded-full border border-gray-700 text-gray-200 glass transition-all hover:bg-white hover:text-yellow-600 hover:font-bold duration-200 hover:scale-110">Get
+            a
+            Quote</a>
+        </div>
+
+        <div class="mt-8 flex items-center gap-6">
+          <div>
+            <p class="text-sm text-gray-400">Trusted since</p>
+            <p class="text-lg font-semibold">2010</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400">Happy travellers</p>
+            <p class="text-lg font-semibold">12k+</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <!-- <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <img src="assets/images/mandir.jpg" alt="Braj travel" class="w-full h-80 object-cover" />
+        </div> -->
+        <div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-2xl">
+
+          <style>
+            @keyframes fadeSlide {
+              0% {
+                opacity: 0;
+              }
+
+              10% {
+                opacity: 1;
+              }
+
+              30% {
+                opacity: 1;
+              }
+
+              40% {
+                opacity: 0;
+              }
+
+              100% {
+                opacity: 0;
+              }
+            }
+
+            .hero-slide {
+              opacity: 0;
+              animation: fadeSlide 20s infinite;
+            }
+
+            .hero-slide:nth-child(1) {
+              animation-delay: 0s;
+            }
+
+            .hero-slide:nth-child(2) {
+              animation-delay: 6s;
+            }
+
+            .hero-slide:nth-child(3) {
+              animation-delay: 8s;
+            }
+
+            .hero-slide:nth-child(4) {
+              animation-delay: 12s;
+            }
+
+            .hero-slide:nth-child(5) {
+              animation-delay: 16s;
+            }
+          </style>
+
+          <img src="assets/images/boat.webp" class="absolute inset-0 w-full h-full object-cover hero-slide">
+          <img src="assets/images/mathura1.webp" class="absolute inset-0 w-full h-full object-cover hero-slide">
+          <img src="assets/images/Taj-Mahal-Agra.jpg.webp"
+            class="absolute inset-0 w-full h-full object-cover hero-slide">
+          <img src="assets/images/isha.webp" class="absolute inset-0 w-full h-full object-cover hero-slide">
+          <img src="assets/images/mandir2.jpg" class="absolute inset-0 w-full h-full object-cover hero-slide">
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold mb-6">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-xl glass border border-white/5">
+          <h4 class="font-semibold text-lg">Private Tours</h4>
+          <p class="mt-3 text-sm text-gray-300">Custom itineraries, private vehicles, experienced guides.</p>
+        </div>
+
+        <div class="p-6 rounded-xl glass border border-white/5">
+          <h4 class="font-semibold text-lg">Hotel Booking</h4>
+          <p class="mt-3 text-sm text-gray-300">Handpicked hotels to match your comfort and budget.</p>
+        </div>
+
+        <div class="p-6 rounded-xl glass border border-white/5">
+          <h4 class="font-semibold text-lg">Transfers & Chauffeur</h4>
+          <p class="mt-3 text-sm text-gray-300">Door-to-door transfers with professional drivers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PACKAGES -->
+  <section id="packages" class="py-12 bg-gradient-to-b from-transparent to-black/40">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Popular Packages</h3>
+        <a href="packages.html" class="text-sm text-yellow-300 hover:underline">See all packages</a>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- package card -->
+        <article class="rounded-xl overflow-hidden bg-white/3 border border-white/5">
+          <img src="assets/images/mathura10.webp" alt="Package 1" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h4 class="text-xl font-semibold">Mathura-Vrindavan Heritage (2 Days)</h4>
+            <p class="mt-2 text-sm text-gray-300">Guided temple walks, local sweets tasting, comfortable transfers.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-sm">From <span class="font-bold text-yellow-300">₹3,999</span></div>
+              <a href="contact.html"
+                class="text-sm px-3 py-2 rounded-full border border-yellow-400 text-yellow-300 transition-all hover:bg-white hover:text-yellow-600 hover:border-transparent hover:font-bold duration-200 hover:scale-110">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl overflow-hidden bg-white/3 border border-white/5">
+          <img src="assets/images/taj.jpg" alt="Package 2" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h4 class="text-xl font-semibold">Agra & Fatehpur Sikri (1 Night)</h4>
+            <p class="mt-2 text-sm text-gray-300">Sunrise Taj visit, historical tour of Fatehpur Sikri.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-sm">From <span class="font-bold text-yellow-300">₹4,500</span></div>
+              <a href="contact.html"
+                class="text-sm px-3 py-2 rounded-full border border-yellow-400 text-yellow-300 transition-all hover:bg-white hover:text-yellow-600 hover:border-transparent hover:font-bold duration-200 hover:scale-110">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl overflow-hidden bg-white/3 border border-white/5">
+          <img src="assets/images/custom.webp" alt="Package 3" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h4 class="text-xl font-semibold">Custom Pilgrimage (Flexible)</h4>
+            <p class="mt-2 text-sm text-gray-300">Create your own itinerary for spiritual journeys and events.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-sm">Contact for pricing</div>
+              <a href="contact.html"
+                class="text-sm px-3 py-2 rounded-full border border-yellow-400 text-yellow-300 transition-all hover:bg-white hover:text-yellow-600 hover:border-transparent hover:font-bold duration-200 hover:scale-110">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPO Travelers + TESTIMONIALS -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-2xl font-semibold">Tempo Traveller, Bus & Vrindavan Cab Services</h3>
+        <div class="mt-4 grid grid-cols-2 gap-3">
+          <img src="assets/images/travller.png" alt="gallery" class="rounded-lg object-cover h-40 w-full" />
+          <img src="assets/images/bus-service.jpg" alt="gallery" class="rounded-lg object-cover h-40 w-full" />
+          <img src="assets/images/taxi.png" alt="gallery" class="rounded-lg object-cover h-40 w-full" />
+
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold">What our customers say</h3>
+        <div class="mt-4 space-y-4">
+          <blockquote class="p-4 rounded-xl glass border border-white/5">
+            <p class="italic">"Excellent service and very knowledgeable local guides. Highly recommended."</p>
+            <cite class="block mt-2 text-sm">— Priya Sharma</cite>
+          </blockquote>
+
+          <blockquote class="p-4 rounded-xl glass border border-white/5">
+            <p class="italic">"Comfortable cars and punctual drivers. Made our family trip worry-free."</p>
+            <cite class="block mt-2 text-sm">— Rakesh Gupta</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM / ABOUT PREVIEW -->
+  <section class="py-12 bg-gradient-to-b from-black/0 to-black/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold">About Us</h3>
+      <div class="mt-6 flex flex-col md:flex-row items-center gap-6">
+        <div class="w-full md:w-1/3">
+          <img src="assets/images/lady_namaste2.png" alt="team" class="rounded-xl object-cover h-70 w-full " />
+        </div>
+        <div class="w-full md:w-2/3">
+          <p class="text-gray-300">BrajBhoomi Tours & Travels has been operating pilgrimage and cultural tours across
+            Braj region since 2010. Our goal is to combine comfort with authentic experiences — local guides, safe
+            transfers, and personalized service.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="about.html" class="px-4 py-2 rounded-full border border-yellow-400 text-yellow-300 text-sm">Learn
+              More</a>
+            <a href="contact.html" class="px-4 py-2 rounded-full glass border border-white/5 text-sm">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER + QUICK CONTACT -->
+  <footer class="mt-12 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold text-lg">BrajBhoomi Tours</h4>
+        <p class="text-sm text-gray-400 mt-2">C-12, Main Road, Mathura<br />Phone: +91 99999 99999</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg">Quick Links</h4>
+        <ul class="mt-2 text-sm text-gray-400 space-y-2">
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg">Subscribe</h4>
+        <p class="text-sm text-gray-400 mt-2">Get exclusive travel offers — join our mailing list.</p>
+        <form class="mt-3 flex gap-2" action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="email" name="email" placeholder="Your email" required class="px-3 py-2 rounded bg-white/5">
+          <button class="px-4 py-2 rounded bg-yellow-500 text-black font-semibold">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center text-sm text-gray-600 py-6">© <span id="year"></span> BrajBhoomi Tours & Travels — All
+      rights reserved</div>
+  </footer>
+
+  <!-- whatsapp floating button -->
+  <a href="https://wa.me/919999999999?text=Hello%20BrajBhoomi%20Tours%20I%20want%20more%20info" target="_blank"
+    rel="noopener"
+    class="fixed right-5 bottom-5 bg-white/5 p-3 rounded-full shadow-lg hover:scale-105 transition-transform">
+    <!-- <i class="fa-brands fa-whatsapp"></i> -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#25D366" viewBox="0 0 256 256">
+  <path d="M128 24A104.1 104.1 0 0 0 47.3 192.3L32 224l33.1-15A104 104 0 1 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm50.7-61.2c-2.8-1.4-16.5-8.1-19-9.1s-4.4-1.4-6.3 1.4s-7.2 9.1-8.9 11s-3.3 2.1-6.1.7s-11.9-4.4-22.6-14.1c-8.3-7.4-14-16.5-15.6-19.3s-.2-4.3 1.2-5.7s2.8-3.3 4.2-5s1.9-2.8 2.8-4.7s.5-3.5-.2-4.9s-6.3-15.2-8.7-20.7s-4.7-4.5-6.3-4.6s-3.5-.1-5.4-.1a10.4 10.4 0 0 0-7.6 3.5c-2.6 2.8-9.9 9.7-9.9 23.7s10.1 27.4 11.5 29.3s19.9 30.3 48.2 42.4c17.9 7.7 24.1 8.4 32.7 7.1c5.3-.8 16.5-6.7 18.8-13.2s2.3-12 .9-13.2s-2.5-1.9-5.3-3.3Z"/>
+</svg>
+
+  </a>
+  <script>
+    // small scripts for mobile menu and year
+    document.getElementById('mobile-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

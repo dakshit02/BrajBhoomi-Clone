@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — BrajBhoomi Tours</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gold: #d4af37
+    }
+  </style>
+</head>
+
+<body class="bg-[#080808] text-gray-100">
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <a href="index.html" class="text-yellow-300">← Back</a>
+    <h1 class="text-3xl font-bold mt-6" style="color:var(--gold)">Enquiry</h1>
+    <p class="mt-2 text-gray-300">Fill the form below and we'll contact you shortly. You can also contact us on
+      WhatsApp.</p>
+
+    <!-- FormSubmit form - replace YOUR_EMAIL_HERE with your gmail address -->
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST"
+      class="mt-6 space-y-4 bg-white/3 p-6 rounded-xl border border-white/5">
+      <!-- Recommended hidden inputs for FormSubmit (to prevent spam and configure response) -->
+      <input type="hidden" name="_subject" value="New Enquiry from BrajBhoomi Website">
+      <input type="hidden" name="_template" value="table">
+      <!-- redirect after submit (optional) -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input name="name" type="text" required placeholder="Full name" class="px-4 py-3 rounded bg-black/60">
+        <input name="phone" type="tel" required placeholder="Phone number" class="px-4 py-3 rounded bg-black/60">
+      </div>
+
+      <input name="email" type="email" placeholder="Email (optional)" class="w-full px-4 py-3 rounded bg-black/60">
+
+      <select name="package" class="w-full px-4 py-3 rounded bg-black/60">
+        <option value="General Enquiry">Select Package (optional)</option>
+        <option value="Mathura-Vrindavan 2 Days">Mathura-Vrindavan 2 Days</option>
+        <option value="Agra 1 Night">Agra 1 Night</option>
+        <option value="Custom Pilgrimage">Custom Pilgrimage</option>
+      </select>
+
+      <textarea name="message" rows="5" placeholder="Your message"
+        class="w-full px-4 py-3 rounded bg-black/60"></textarea>
+
+      <div class="flex items-center gap-3">
+        <button type="submit" class="px-5 py-3 rounded bg-yellow-500 text-black font-semibold">Send Enquiry</button>
+
+        <!-- WhatsApp button below the form -->
+        <a href="https://wa.me/919999999999?text=Hello%20I%20have%20an%20enquiry" target="_blank" rel="noopener"
+          class="px-4 py-3 rounded border border-white/10 glass">Contact on WhatsApp</a>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-2">By submitting you agree to our terms. Replace the form action email with
+        your Gmail to receive enquiries in your inbox.</p>
+    </form>
+
+  </div>
+</body>
+
+</html>
